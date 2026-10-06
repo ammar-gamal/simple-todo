@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Todo.Backend/Todo.Backend.csproj" />
+  <Project Path="Todo.Frontend/Todo.Frontend.csproj" />
+</Solution>
