@@ -45,14 +45,16 @@ jobs:
             - name: Build and Push Frontend
               uses: docker/build-push-action@v6
               with:
-                context: ./Todo.Frontend
+                file: ./Todo.Frontend/Dockerfile
+                context: .
                 push: true
                 tags: ${{ env.FRONTEND_IMAGE }}
 
             - name: Build and Push Backend
               uses: docker/build-push-action@v6
               with:
-                context: ./Todo.Backend
+                file: ./Todo.Backend/Dockerfile
+                context: .
                 push: true
                 tags: ${{ env.BACKEND_IMAGE }}
     # deploy:
